@@ -12,17 +12,18 @@
 <body>
 
     <div class="logo">
-        <img src="logo.png" height="96" width="96">
+        <img id="logo" src="logo.png" height="96" width="96">
     </div>
 
 
-    <div class="toolbar">
+    <div  class="toolbar">
+
         <div id="dissect" class="toolbar-button">
             <i class="fa fa-scalpel"></i>
         </div>
 
-        <div class="toolbar-button knife">
-            <i class="fa fa-knife-kitchen"></i>
+        <div id="toolbar" class="toolbar-button knife">
+            <i class="fa fa-cut"></i>
 
             <div class="toolbar-dropdown">
                 <div class="toolbar-button">
@@ -35,6 +36,10 @@
                     <i style="transform: rotate(90deg)" class="fa fa-minus"></i>
                 </div>
             </div>
+        </div>
+
+        <div class="toolbar-button">
+            <i class="fa fa-file-medical"></i>
         </div>
 
         <div class="toolbar-button">
@@ -83,6 +88,7 @@
         <a href="#">Tutorial</a>
         <a href="#">Profile</a>
         <a href="#">Home</a>
+        <a id="night-mode" href="#">Night Mode&#160;&#160;<i class="fa fa-cloud-moon"></i></a>
     </div>
 
 

@@ -17,3 +17,15 @@ function dissect() {
     console.log('dissect')
     
 }
+
+document.getElementById('night-mode').addEventListener('click', nightMode);
+
+function nightMode() {
+    
+    document.body.style.backgroundColor = '#333';
+    document.querySelector('#sidenav').style.backgroundColor = '#333';
+    document.querySelector('#toolbar').style.backgroundColor = '#555';
+    document.querySelector('#logo').src = 'Logo_Night.png';
+    console.log('night')
+    
+}

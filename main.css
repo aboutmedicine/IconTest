@@ -124,7 +124,7 @@ body {
     top: 0;
     right: 0;
     background-color: #fff;
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.2s;
     border-left: 2px solid #ffeeee;
 }
@@ -137,6 +137,8 @@ body {
     display: block;
     transition: 0.2s;
     font-weight: 500;
+    overflow: hidden;
+    min-width: 200px;
 }
 
 .sidenav .header {
