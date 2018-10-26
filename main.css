@@ -1,0 +1,151 @@
+:root {
+    --brain: #ffdb54;
+    --vessels: #ff6b12;
+    --kidney: #da7ba4;
+    --lungs: #7b98fd;
+    --liver: #b38127;
+    --skeleton: #99d9f5;
+    --muscle: #c286c3;
+    --gastro: #75bd19;
+    --heart: #ff6e67;
+    --genital: #d0a3a3;
+    --immunity: #70e080;
+    --endocrine: #f7bb7c;
+}
+
+body {
+    cursor: default;
+}
+
+* {
+    font-family: Avenir Next;
+}
+
+.logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: left;
+    margin: 40px 128px 0px;
+}
+
+.toolbar-button {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #aaa;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 16px 16px 0px;
+    font-size: 30px;
+    transition: .2s;
+}
+
+.toolbar-button:hover {
+    background-color: #888;
+    cursor: pointer;
+}
+
+
+.toolbar > div:hover .toolbar-dropdown {
+    display: flex;
+}
+
+.toolbar-dropdown {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    padding-top: 272px;
+    padding-left: 16px;
+    
+}
+
+.toolbar-social {
+    display: flex;
+    position: absolute;
+    left: 40px;
+    top: 128px;
+    flex-direction: column;
+}
+
+.social-button {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    transition: .2s;
+}
+
+.social-button:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+.sidenav-button {
+    position: absolute;
+    color: #ccc;
+    top: 36px;
+    right: 8px;
+    width: 48px;
+    height: 48px;
+    font-size: 32px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.sidenav-button:hover,
+.sidenav a:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.2s;
+    border-left: 2px solid #ffeeee;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #666;
+    display: block;
+    transition: 0.2s;
+    font-weight: 500;
+}
+
+.sidenav .header {
+    padding: 32px 8px 8px 32px;
+    margin: none;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--heart);
+    display: block;
+    font-size: 48px;
+    font-weight: 600;
+}
